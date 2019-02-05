@@ -1,0 +1,21 @@
+{
+  "routes": [
+    {
+      "endpoint": "/accounts",
+      "destination": {
+        "path": "http://localhost:8090/accounts/",
+        "requiresAuthentication": "true"
+      }
+    },
+    {
+      "endpoint": "/planning",
+      "destination": {
+        "path": "http://localhost:8091/planning/",
+        "requiresAuthentication": "false"
+      }
+    }
+  ],
+  "authenticationService": {
+    "path": "http://localhost:8080/api/auth/"
+  }
+}
